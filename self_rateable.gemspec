@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = SelfRateable::VERSION
   spec.authors       = ["ostaptan"]
   spec.email         = ["otan256@gmail.com"]
-  spec.description   = %q{Clean, powerful, customizable, simple, configurable, gem for displaying and handling ratings, likes, and feedbacks for ActiveRecord model.}
-  spec.summary       = %q{Gem for displaying and handling ratings, likes, and feedbacks for ActiveRecord model.}
-  spec.homepage      = ""
+  spec.description   = %q{Clean, powerful, customizable, simple, configurable, gem for displaying and handling ratings, likes, or stars for ActiveRecord model.}
+  spec.summary       = %q{Gem for displaying and handling ratings, likes, or stars for ActiveRecord model.}
+  spec.homepage      = "https://github.com/ostaptan/self_rateable"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)

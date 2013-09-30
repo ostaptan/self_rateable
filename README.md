@@ -21,16 +21,12 @@ Or install it yourself as:
 Make you ActiveRecord model self rateable:
 
 	class Model < ActiveRecord::Base
-    	self_rateable on: :column_name, by: :class_name_of_AR_model_that_can_rate
+    	self_rateable by: :class_name_of_AR_model_that_can_rate
  	end
 
- Run generator to prepare your database: (still not developed)
+ Run rake task to prepare and update your database:
 
- 	rails g self_rateable:prepare
-
- Migrate your database: (still not developed)
- 	
- 	rake db:migrate	
+ 	rake self_rateable	
 
  Use: (still not developed)
 
