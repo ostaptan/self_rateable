@@ -21,7 +21,7 @@ Or install it yourself as:
 Make you ActiveRecord model self rateable:
 
 	class Model < ActiveRecord::Base
-    	self_rateable, on: :column_name, by: :class_name_of_AR_model_that_can_rate
+    	self_rateable on: :column_name, by: :class_name_of_AR_model_that_can_rate
  	end
 
  Run generator to prepare your database: (still not developed)
