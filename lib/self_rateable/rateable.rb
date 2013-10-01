@@ -18,6 +18,7 @@ module SelfRateable
 
     def validate_opts(options)
       raise 'Incorect specification of self_rateable in your model please check documentation' if options[:type].blank? && options[:by].blank?
+      raise 'Incorect specification of self_rateable in your model please check documentation' if options[:by].blank?
       options[:type].blank? ? {by: options[:by], type: 'likes'} : options 
     end 
   end
