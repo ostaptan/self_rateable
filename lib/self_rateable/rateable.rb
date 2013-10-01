@@ -3,7 +3,7 @@ module SelfRateable
     def self_rateable(options)
       ops = validate_opts(options)
       class_eval do
-        add_associations(options[:by])
+        add_associations(ops[:by])
         include "SelfRateable::Core::InstanceMethods::#{ops[:type].to_s.camelize}".constantize
         include "SelfRateable::Core::ClassMethods::#{ops[:type].to_s.camelize}".constantize
       end      
