@@ -19,22 +19,28 @@ Or install it yourself as:
 ## Usage(still developing)
 
 Make you ActiveRecord model self rateable:
+
+The default type is :likes
+	class Model < ActiveRecord::Base
+    	self_rateable by: :class_name_of_AR_model_that_can_rate
+ 	end
+
 Rates philosophy as in facebook & vk (like/unlike)
 
 	class Model < ActiveRecord::Base
-    	self_rateable_likes by: :class_name_of_AR_model_that_can_rate
+    	self_rateable by: :class_name_of_AR_model_that_can_rate, type: :likes
  	end
 
 Stars rates diapasone 1..5 (as on movies) 	
 
  	class Model < ActiveRecord::Base
-    	self_rateable_stars by: :class_name_of_AR_model_that_can_rate
+    	self_rateable by: :class_name_of_AR_model_that_can_rate, type: :stars
  	end
 
  Rates philosophy as in stackoverflow (+1 vs -1)	
 
  	class Model < ActiveRecord::Base
-    	self_rateable_points by: :class_name_of_AR_model_that_can_rate
+    	self_rateable by: :class_name_of_AR_model_that_can_rate, type: :points
  	end
 
  Run rake task to prepare and update your database:
