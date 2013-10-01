@@ -4,8 +4,8 @@ module SelfRateable
       ops = validate_opts(options)
       class_eval do
         add_associations(options[:by])
-        include "SelfRateable::Core::InstanceMethods::#{ops[:type].camelize}".constantize
-        include "SelfRateable::Core::ClassMethods::#{ops[:type].camelize}".constantize
+        include "SelfRateable::Core::InstanceMethods::#{ops[:type].to_s.camelize}".constantize
+        include "SelfRateable::Core::ClassMethods::#{ops[:type].to_s.camelize}".constantize
       end      
     end
 
