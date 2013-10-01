@@ -1,4 +1,4 @@
-# SelfRateable
+# SelfRateable [![Code Climate](https://codeclimate.com/github/ostaptan/self_rateable.png)](https://codeclimate.com/github/ostaptan/self_rateable)
 
 Clean, powerful, customizable, simple, configurable, gem for displaying and handling ratings, likes, and feedbacks for ActiveRecord model.
 People!!! Please provide your feedbacks what functionality to add on the issues page. I'm open to whatever questions for improving this gem. 
