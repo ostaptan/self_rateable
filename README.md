@@ -21,6 +21,7 @@ Or install it yourself as:
 Make you ActiveRecord model self rateable:
 
 The default type is :likes
+
 	class Model < ActiveRecord::Base
     	self_rateable by: :class_name_of_AR_model_that_can_rate
  	end
