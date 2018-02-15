@@ -1,8 +1,8 @@
 module SelfRateable::Core
 	module ClassMethods
-	  module Likes
-		  def self.included(base)
-	      base.extend SelfRateable::Core::ClassMethods
+    module Likes
+      def self.included(base)
+        base.extend SelfRateable::Core::ClassMethods
       end
     end
 

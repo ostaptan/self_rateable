@@ -1,7 +1,7 @@
 module SelfRateable::Core
  	module InstanceMethods
  	  module Likes
-	 	  def likes
+      def likes
         ratings.sum(:rating).to_f
       end
 
@@ -19,12 +19,12 @@ module SelfRateable::Core
       		#create new record if not yet rated
       		ratings << SelfRateable::Rating.new(rating: 1, rater_id: rater.try(:id))
       	end
-      	self.save!
+        self.save!
       end
-	  end
+    end
 
-	  module Stars
-  	  def stars
+    module Stars
+      def stars
         ratings.average(:rating).to_f
       end
 
@@ -33,7 +33,7 @@ module SelfRateable::Core
       end
 
       def rate(rater, stars)
-      	rater.present? ? rate = ratings.where(rater_id: rater.id).first : raise('Rater object is incorrect.')
+        rater.present? ? rate = ratings.where(rater_id: rater.id).first : raise('Rater object is incorrect.')
       	stars = 5 if stars > 5
       	stars = 0 if stars < 1
       	if rated_by_rater?(rater)
@@ -46,7 +46,7 @@ module SelfRateable::Core
       	end
       	self.save!
       end
-	  end
+    end
 
 	  module Points
   	  def votes
