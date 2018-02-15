@@ -11,7 +11,7 @@ require "self_rateable/core/class_methods.rb"
 require "self_rateable/rating.rb"
 
 module SelfRateable
-	require "self_rateable/railtie" if defined?(Rails)
+  require "self_rateable/railtie" if defined?(Rails)
 end
 
 $LOAD_PATH.shift

@@ -72,7 +72,7 @@ Run rake task to prepare and update your database:
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request and send it to me.)
+5. Create new Pull Request.
 
 ## What to do?
 
